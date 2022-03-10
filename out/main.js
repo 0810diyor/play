@@ -24,14 +24,14 @@ cards.forEach(card => {
                 }, 1000);
                 counter = 4;
             }
-        }
-        else if (counter === 3) {
-            let amount = +bet.value;
-            cash = cash - amount;
-            balance.innerText = `Balance $${cash}`;
-            setTimeout(() => {
-                alert('yutqazdingiz!');
-            }, 1000);
+            else if (counter === 3) {
+                let amount = +bet.value;
+                cash = cash - amount;
+                balance.innerText = `Balance $${cash}`;
+                setTimeout(() => {
+                    alert('yutqazdingiz!');
+                }, 1000);
+            }
         }
     };
 });
